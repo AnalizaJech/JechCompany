@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jech Company - Detalle de Producto</title>
+  <!-- Tailwind CSS CDN -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- NAVBAR -->
+  <header class="bg-[#111827] text-white">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="text-xl font-bold">Jech Company</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[#22D3EE] transition-colors">Inicio</a>
+        <a href="rubros.html" class="hover:text-[#22D3EE] transition-colors">Rubros</a>
+        <a href="nosotros.html" class="hover:text-[#22D3EE] transition-colors">Nosotros</a>
+        <a href="contacto.html" class="hover:text-[#22D3EE] transition-colors">Contacto</a>
+      </div>
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú móvil -->
+    <div id="mobileMenu" class="bg-[#111827] md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Inicio</a>
+        <a href="rubros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Rubros</a>
+        <a href="nosotros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Nosotros</a>
+        <a href="contacto.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DEL PRODUCTO -->
+  <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold mb-4 text-[#000000]">Campaña de Marketing Viral “GalaxyBuzz”</h1>
+    <img src="https://source.unsplash.com/random/800x500?marketing" alt="Campaña Marketing"
+         class="w-full h-auto mb-6 rounded shadow">
+    <p class="text-gray-700 mb-6 leading-relaxed">
+      Nuestra campaña “GalaxyBuzz” logró posicionar la marca ficticia <strong>StarSpark</strong> 
+      como líder en tecnología espacial. Aplicamos técnicas de marketing digital, 
+      influencers y creatividad disruptiva para generar más de 
+      <strong class="text-[#22D3EE]">10 millones de interacciones</strong> 
+      en redes sociales en tan solo 3 semanas.
+    </p>
+
+    <!-- Características / Beneficios -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-3 text-[#000000]">Características Principales</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Contenido viral con storytelling inmersivo</li>
+        <li>Integración con plataformas de streaming en vivo</li>
+        <li>Segmentación de audiencias hiper-personalizada</li>
+        <li>Dashboards de analítica en tiempo real para medir resultados</li>
+      </ul>
+    </section>
+
+    <!-- Creadores / Talento -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-3 text-[#000000]">Creadores</h2>
+      <div class="flex items-center space-x-4 mb-4">
+        <img src="https://source.unsplash.com/random/100x100?person" alt="Creadora"
+             class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <p class="font-bold text-[#000000]">Laura Gómez</p>
+          <p class="text-sm text-gray-500">Directora de Marketing y Estrategia</p>
+          <a href="#" class="text-[#E91E63] hover:underline">LinkedIn</a>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://source.unsplash.com/random/101x101?person" alt="Creador"
+             class="w-16 h-16 rounded-full object-cover">
+        <div>
+          <p class="font-bold text-[#000000]">Miguel Torres</p>
+          <p class="text-sm text-gray-500">Director Creativo</p>
+          <a href="#" class="text-[#E91E63] hover:underline">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados / CTA -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-3 text-[#000000]">Resultados Destacados</h2>
+      <p class="text-gray-700 mb-4">
+        <strong>ROI (Retorno de Inversión):</strong> 300% <br />
+        <strong>Engagement en redes:</strong> +65% <br />
+        <strong>Nuevos clientes potenciales:</strong> 20,000 en 3 semanas
+      </p>
+      <a href="contacto.html" class="inline-block bg-[#E91E63] text-white px-6 py-3 rounded-full 
+                                     hover:bg-pink-700 transition-colors font-semibold">
+        ¿Quieres algo similar? Contáctanos
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111827] text-white py-6 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+      <p class="mb-2 sm:mb-0">&copy; 2025 Jech Company. Todos los derechos reservados.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-[#22D3EE]">LinkedIn</a>
+        <a href="#" class="hover:text-[#22D3EE]">Facebook</a>
+        <a href="#" class="hover:text-[#22D3EE]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Menú Móvil -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

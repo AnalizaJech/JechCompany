@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jech Company - Rubros</title>
+  <!-- Tailwind CSS CDN -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- NAVBAR -->
+  <header class="bg-[#111827] text-white">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="text-xl font-bold">Jech Company</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[#22D3EE] transition-colors">Inicio</a>
+        <a href="rubros.html" class="hover:text-[#22D3EE] transition-colors">Rubros</a>
+        <a href="nosotros.html" class="hover:text-[#22D3EE] transition-colors">Nosotros</a>
+        <a href="contacto.html" class="hover:text-[#22D3EE] transition-colors">Contacto</a>
+      </div>
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú móvil -->
+    <div id="mobileMenu" class="bg-[#111827] md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Inicio</a>
+        <a href="rubros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Rubros</a>
+        <a href="nosotros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Nosotros</a>
+        <a href="contacto.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LISTADO DE RUBROS -->
+  <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Nuestros Rubros</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Rubro 1 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Marketing</h2>
+        <p class="text-gray-700 mb-4">
+          Posicionamiento de marca, campañas virales, redes sociales e inteligencia de mercados.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+      <!-- Rubro 2 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Diseño Gráfico</h2>
+        <p class="text-gray-700 mb-4">
+          Branding, ilustraciones, packaging y todo lo que tu marca necesita para destacar.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+      <!-- Rubro 3 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Programación</h2>
+        <p class="text-gray-700 mb-4">
+          Desarrollo web, apps móviles y soluciones tecnológicas de alto rendimiento.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+      <!-- Rubro 4 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Música</h2>
+        <p class="text-gray-700 mb-4">
+          Composición, producción y arreglos para spots, cortometrajes y artistas emergentes.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+      <!-- Rubro 5 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Producción Audiovisual</h2>
+        <p class="text-gray-700 mb-4">
+          Videoclips, cortometrajes, publicidad y animaciones con storytelling cautivador.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+      <!-- Rubro 6 -->
+      <div class="bg-white border rounded-lg shadow hover:shadow-lg p-6">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Liderazgo y Coaching</h2>
+        <p class="text-gray-700 mb-4">
+          Formación de equipos de alto rendimiento, mentorías y programas de desarrollo ejecutivo.
+        </p>
+        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver proyectos &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-[#111827] text-white pt-10 pb-6 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+      <!-- GRID principal: 3 columnas en desktop, 1 en móvil -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Columna 1: Presentación enfocada en pasión y amplitud de rubros -->
+        <div>
+          <h3 class="text-white font-semibold mb-3 text-lg">Jech Company</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Nuestros talentos viven la pasión por innovar en cualquier rubro imaginable 
+            (excepto minería). Creemos en el poder de la creatividad y la tecnología para 
+            llevar cada proyecto al siguiente nivel.
+          </p>
+          <!-- Pequeña lista de "stats" o fortalezas (opcionales) -->
+          <ul class="text-gray-300 text-sm space-y-1">
+            <li><strong>10+</strong> rubros explorados y en constante expansión</li>
+            <li><strong>50+</strong> proyectos realizados con éxito internacional</li>
+            <li><strong>100%</strong> dedicación y pasión en cada proyecto</li>
+          </ul>
+        </div>
+  
+        <!-- Columna 2: Información de contacto -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 text-lg">Contáctanos</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>
+              <strong>Teléfono:</strong> 
+              <a href="tel:+51921737608" class="hover:text-[#22D3EE] transition-colors">
+                +51 921 737 608
+              </a>
+            </li>
+            <li>
+              <strong>Email:</strong> 
+              <a href="mailto:info@jechcompany.com" class="hover:text-[#22D3EE] transition-colors">
+                info@jechcompany.com
+              </a>
+            </li>
+            <li>
+              <strong>Dirección:</strong> Lima, PE, Perú
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Columna 3: Suscripción a boletín -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 text-lg">Suscríbete a nuestro boletín</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Recibe noticias, ofertas y actualizaciones sobre nuestros proyectos más recientes.
+          </p>
+          <form class="flex flex-col space-y-3">
+            <input 
+              type="email" 
+              placeholder="Ingresa tu email" 
+              required
+              class="px-4 py-2 rounded text-black focus:outline-none focus:border-[#E91E63]"
+            >
+            <button 
+              type="submit" 
+              class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold py-2 rounded transition-colors"
+            >
+              Suscribirme
+            </button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Separador -->
+      <hr class="border-gray-700 my-8" />
+  
+      <!-- Sección final: derechos, políticas, redes -->
+      <div class="flex flex-col sm:flex-row items-center justify-between">
+        <!-- Derechos y Políticas -->
+        <div class="text-sm text-gray-400 mb-4 sm:mb-0">
+          &copy; 2025 Jech Company. Todos los derechos reservados.
+          &nbsp;|&nbsp;
+          <a href="legal/politica-privacidad.html" class="hover:text-[#22D3EE] transition-colors">Política de Privacidad</a>
+          &nbsp;|&nbsp;
+          <a href="legal/terminos-condiciones.html" class="hover:text-[#22D3EE] transition-colors">Términos y Condiciones</a>
+        </div>
+  
+        <!-- Redes Sociales -->
+        <div class="flex space-x-4">
+          <!-- Podrías usar íconos en lugar de texto -->
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            LinkedIn
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            Facebook
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+
+  <!-- JS Menú Móvil -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

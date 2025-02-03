@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jech Company - Nosotros</title>
+  <!-- Tailwind CSS CDN -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- NAVBAR -->
+  <header class="bg-[#111827] text-white">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="text-xl font-bold">Jech Company</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[#22D3EE] transition-colors">Inicio</a>
+        <a href="rubros.html" class="hover:text-[#22D3EE] transition-colors">Rubros</a>
+        <a href="nosotros.html" class="hover:text-[#22D3EE] transition-colors">Nosotros</a>
+        <a href="contacto.html" class="hover:text-[#22D3EE] transition-colors">Contacto</a>
+      </div>
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú móvil -->
+    <div id="mobileMenu" class="bg-[#111827] md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Inicio</a>
+        <a href="rubros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Rubros</a>
+        <a href="nosotros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Nosotros</a>
+        <a href="contacto.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN SOBRE NOSOTROS -->
+  <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold mb-6 text-center text-[#000000]">Quiénes Somos</h1>
+    <p class="text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto text-center">
+      Jech Company nació con la visión de revolucionar múltiples industrias 
+      mediante soluciones creativas e integrales. Nuestro equipo multidisciplinario 
+      trabaja incansablemente para transformar ideas en experiencias únicas.
+    </p>
+
+    <!-- Misión, Visión, Valores -->
+    <section class="flex flex-col md:flex-row gap-8 mb-12">
+      <div class="md:w-1/3 bg-[#E4E7EB] p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Misión</h2>
+        <p class="text-gray-700">
+          Empoderar a nuestros clientes a través de la innovación y la creatividad, 
+          brindando soluciones personalizadas de alto impacto en cada rubro.
+        </p>
+      </div>
+      <div class="md:w-1/3 bg-[#E4E7EB] p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Visión</h2>
+        <p class="text-gray-700">
+          Convertirnos en la compañía líder mundial en soluciones integrales, 
+          reconocida por su talento humano y la excelencia en cada proyecto.
+        </p>
+      </div>
+      <div class="md:w-1/3 bg-[#E4E7EB] p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2 text-[#000000]">Valores</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Creatividad</li>
+          <li>Compromiso</li>
+          <li>Calidad</li>
+          <li>Colaboración</li>
+          <li>Transparencia</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Equipo Destacado -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 text-center text-[#000000]">Nuestro Talento</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Miembro 1 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow text-center">
+          <img src="https://source.unsplash.com/random/150x150?person" alt="Miembro"
+               class="mx-auto rounded-full mb-4">
+          <h3 class="font-semibold text-xl text-[#000000]">Juan Hernández</h3>
+          <p class="text-gray-600 mb-2">CEO & Fundador</p>
+          <a href="#" class="text-[#E91E63] hover:underline">LinkedIn</a>
+        </div>
+        <!-- Miembro 2 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow text-center">
+          <img src="https://source.unsplash.com/random/151x151?person" alt="Miembro"
+               class="mx-auto rounded-full mb-4">
+          <h3 class="font-semibold text-xl text-[#000000]">María Velázquez</h3>
+          <p class="text-gray-600 mb-2">CTO & Líder de Desarrollo</p>
+          <a href="#" class="text-[#E91E63] hover:underline">LinkedIn</a>
+        </div>
+        <!-- Miembro 3 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow text-center">
+          <img src="https://source.unsplash.com/random/152x152?person" alt="Miembro"
+               class="mx-auto rounded-full mb-4">
+          <h3 class="font-semibold text-xl text-[#000000]">Ricardo Lima</h3>
+          <p class="text-gray-600 mb-2">Director de Producción Audiovisual</p>
+          <a href="#" class="text-[#E91E63] hover:underline">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111827] text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+      <p class="mb-2 sm:mb-0">&copy; 2025 Jech Company. Todos los derechos reservados.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-[#22D3EE]">LinkedIn</a>
+        <a href="#" class="hover:text-[#22D3EE]">Facebook</a>
+        <a href="#" class="hover:text-[#22D3EE]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Menú Móvil -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

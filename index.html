@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jech Company - Inicio</title>
+  <!-- Tailwind CSS CDN -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- NAVBAR -->
+  <header class="bg-[#111827] text-white">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="index.html" class="text-xl font-bold tracking-wide">
+        Jech Company
+      </a>
+      <!-- Menú de escritorio -->
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[#22D3EE] transition-colors">Inicio</a>
+        <a href="rubros.html" class="hover:text-[#22D3EE] transition-colors">Rubros</a>
+        <a href="nosotros.html" class="hover:text-[#22D3EE] transition-colors">Nosotros</a>
+        <a href="contacto.html" class="hover:text-[#22D3EE] transition-colors">Contacto</a>
+      </div>
+      <!-- Botón Menú Móvil -->
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobileMenu" class="bg-[#111827] md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Inicio</a>
+        <a href="rubros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Rubros</a>
+        <a href="nosotros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Nosotros</a>
+        <a href="contacto.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="flex flex-col items-center justify-center text-center bg-[#000000] text-white h-[80vh] px-6">
+    <h1 class="text-4xl sm:text-6xl font-bold mb-4">Bienvenidos a Jech Company</h1>
+    <p class="text-lg sm:text-xl mb-6 max-w-2xl">
+      Innovamos en todo, excepto en minería. Descubre cómo transformamos ideas en
+      proyectos sorprendentes: marketing, diseño, programación, música, producción
+      audiovisual, liderazgo y más.
+    </p>
+    <a href="rubros.html"
+       class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-colors">
+      Conoce Nuestros Rubros
+    </a>
+  </section>
+
+  <!-- SECCIÓN DESTACADOS -->
+  <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-8">Productos Destacados</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card Producto 1 -->
+      <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <img src="https://source.unsplash.com/random/600x400?marketing" alt="Marketing" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Campaña de Marketing Viral</h3>
+          <p class="text-gray-600 mb-4">
+            Creamos estrategias publicitarias con impacto mundial para marcas emergentes. 
+          </p>
+          <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
+        </div>
+      </div>
+      <!-- Card Producto 2 -->
+      <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <img src="https://source.unsplash.com/random/600x400?design" alt="Diseño Gráfico" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Branding de Alto Impacto</h3>
+          <p class="text-gray-600 mb-4">
+            Diseñamos identidades visuales que conectan y fidelizan clientes a primera vista.
+          </p>
+          <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
+        </div>
+      </div>
+      <!-- Card Producto 3 -->
+      <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+        <img src="https://source.unsplash.com/random/600x400?code" alt="Programación" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Aplicación Web Inteligente</h3>
+          <p class="text-gray-600 mb-4">
+            Automatizamos procesos y usamos IA para optimizar el flujo empresarial.
+          </p>
+          <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS (Fondo Gris Claro) -->
+  <section class="bg-[#E4E7EB] py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-8">Testimonios</h2>
+      <div class="flex flex-col sm:flex-row gap-8">
+        <div class="sm:w-1/2 bg-white p-6 rounded shadow">
+          <p class="text-gray-700 italic mb-4">
+            "Trabajar con Jech Company fue increíble. Nuestra marca jamás había tenido tanto
+            alcance en redes sociales. ¡100% recomendados!"
+          </p>
+          <div class="font-bold text-[#000000]">- Carlos Mendoza, CEO de StartUp X</div>
+        </div>
+        <div class="sm:w-1/2 bg-white p-6 rounded shadow">
+          <p class="text-gray-700 italic mb-4">
+            "El equipo de programación desarrolló una solución totalmente a medida. Ahorramos
+            tiempo y dinero en procesos manuales."
+          </p>
+          <div class="font-bold text-[#000000]">- Ana García, Directora de Operaciones en TechFlow</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111827] text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+      <p class="mb-2 sm:mb-0">&copy; 2025 Jech Company. Todos los derechos reservados.</p>
+      <div class="space-x-4">
+        <!-- Uso de celeste vibrante para resaltar enlaces en el footer -->
+        <a href="#" class="hover:text-[#22D3EE]">LinkedIn</a>
+        <a href="#" class="hover:text-[#22D3EE]">Facebook</a>
+        <a href="#" class="hover:text-[#22D3EE]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS para menú móvil -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
