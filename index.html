@@ -45,18 +45,32 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="flex flex-col items-center justify-center text-center bg-[#000000] text-white h-[80vh] px-6">
-    <h1 class="text-4xl sm:text-6xl font-bold mb-4">Bienvenidos a Jech Company</h1>
-    <p class="text-lg sm:text-xl mb-6 max-w-2xl">
-      Innovamos en todo, excepto en minería. Descubre cómo transformamos ideas en
-      proyectos sorprendentes: marketing, diseño, programación, música, producción
-      audiovisual, liderazgo y más.
-    </p>
-    <a href="rubros.html"
-       class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-colors">
-      Conoce Nuestros Rubros
-    </a>
-  </section>
+<section 
+class="relative flex items-center justify-center text-center h-[80vh] bg-cover bg-center bg-no-repeat" 
+style="background-image: url('assets/img/profesionales.png');"
+>
+<!-- Overlay oscuro -->
+<div class="absolute inset-0 bg-[#000000]/60"></div>
+
+<!-- Contenido hero -->
+<div class="relative z-10 px-6 text-white max-w-2xl">
+  <h1 class="text-4xl sm:text-6xl font-bold mb-4">
+    Bienvenidos a Jech Company
+  </h1>
+  <p class="text-lg sm:text-xl mb-6">
+    Innovamos en todo, excepto en minería. Descubre cómo transformamos ideas en
+    proyectos sorprendentes: marketing, diseño, programación, música, producción
+    audiovisual, liderazgo y más.
+  </p>
+  <a 
+    href="rubros.html"
+    class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+  >
+    Conoce Nuestros Rubros
+  </a>
+</div>
+</section>
+
 
   <!-- SECCIÓN DESTACADOS -->
   <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -64,7 +78,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Card Producto 1 -->
       <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-        <img src="https://source.unsplash.com/random/600x400?marketing" alt="Marketing" class="w-full h-48 object-cover">
+        <img src="assets/img/producto1.png" alt="Marketing" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold mb-2">Campaña de Marketing Viral</h3>
           <p class="text-gray-600 mb-4">
