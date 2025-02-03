@@ -102,16 +102,106 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-[#111827] text-white py-6 mt-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
-      <p class="mb-2 sm:mb-0">&copy; 2025 Jech Company. Todos los derechos reservados.</p>
-      <div class="space-x-4">
-        <a href="#" class="hover:text-[#22D3EE]">LinkedIn</a>
-        <a href="#" class="hover:text-[#22D3EE]">Facebook</a>
-        <a href="#" class="hover:text-[#22D3EE]">Twitter</a>
+<footer class="bg-[#111827] text-white pt-10 pb-6 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+      <!-- GRID principal: 3 columnas en desktop, 1 en móvil -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Columna 1: Presentación enfocada en pasión y amplitud de rubros -->
+        <div>
+          <h3 class="text-white font-semibold mb-3 text-lg">Jech Company</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Nuestros talentos viven la pasión por innovar en cualquier rubro imaginable 
+            (excepto minería). Creemos en el poder de la creatividad y la tecnología para 
+            llevar cada proyecto al siguiente nivel.
+          </p>
+          <!-- Pequeña lista de "stats" o fortalezas (opcionales) -->
+          <ul class="text-gray-300 text-sm space-y-1">
+            <li><strong>10+</strong> rubros explorados y en constante expansión</li>
+            <li><strong>50+</strong> proyectos realizados con éxito internacional</li>
+            <li><strong>100%</strong> dedicación y pasión en cada proyecto</li>
+          </ul>
+        </div>
+  
+        <!-- Columna 2: Información de contacto -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 text-lg">Contáctanos</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>
+              <strong>Teléfono:</strong> 
+              <a href="tel:+51921737608" class="hover:text-[#22D3EE] transition-colors">
+                +51 921 737 608
+              </a>
+            </li>
+            <li>
+              <strong>Email:</strong> 
+              <a href="mailto:info@jechcompany.com" class="hover:text-[#22D3EE] transition-colors">
+                info@jechcompany.com
+              </a>
+            </li>
+            <li>
+              <strong>Dirección:</strong> Lima, PE, Perú
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Columna 3: Suscripción a boletín -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 text-lg">Suscríbete a nuestro boletín</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Recibe noticias, ofertas y actualizaciones sobre nuestros proyectos más recientes.
+          </p>
+          <form class="flex flex-col space-y-3">
+            <input 
+              type="email" 
+              placeholder="Ingresa tu email" 
+              required
+              class="px-4 py-2 rounded text-black focus:outline-none focus:border-[#E91E63]"
+            >
+            <button 
+              type="submit" 
+              class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold py-2 rounded transition-colors"
+            >
+              Suscribirme
+            </button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Separador -->
+      <hr class="border-gray-700 my-8" />
+  
+      <!-- Sección final: derechos, políticas, redes -->
+      <div class="flex flex-col sm:flex-row items-center justify-between">
+        <!-- Derechos y Políticas -->
+        <div class="text-sm text-gray-400 mb-4 sm:mb-0">
+          &copy; 2025 Jech Company. Todos los derechos reservados.
+          &nbsp;|&nbsp;
+          <a href="legal/politica-privacidad.html" class="hover:text-[#22D3EE] transition-colors">Política de Privacidad</a>
+          &nbsp;|&nbsp;
+          <a href="legal/terminos-condiciones.html" class="hover:text-[#22D3EE] transition-colors">Términos y Condiciones</a>
+        </div>
+  
+        <!-- Redes Sociales -->
+        <div class="flex space-x-4">
+          <!-- Podrías usar íconos en lugar de texto -->
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            LinkedIn
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            Facebook
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#22D3EE] text-sm transition-colors">
+            Twitter
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+  
+  
+  
 
   <!-- JS Menú Móvil -->
   <script>
