@@ -2,32 +2,32 @@
     SCRIPT: menú móvil + link activo 
 */
 
-  // 1. Botón hamburguesa: mostrar/ocultar menú móvil
-  const menuBtn = document.getElementById('menuBtn');
+   // Botones de apertura/cierre
+  const menuOpenBtn = document.getElementById('menuOpenBtn');
+  const menuCloseBtn = document.getElementById('menuCloseBtn');
   const mobileMenu = document.getElementById('mobileMenu');
 
-  menuBtn.addEventListener('click', () => {
-    if (mobileMenu.classList.contains('translate-x-full')) {
-      mobileMenu.classList.remove('translate-x-full');
-      mobileMenu.classList.add('translate-x-0');
-    } else {
-      mobileMenu.classList.remove('translate-x-0');
-      mobileMenu.classList.add('translate-x-full');
-    }
+  menuOpenBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
   });
 
-  // 2. Detección de página activa
-  const currentPath = window.location.pathname; 
-  // p.ej: "/index.html", "/rubros.html", etc.
+  menuCloseBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-0');
+    mobileMenu.classList.add('translate-x-full');
+  });
 
-  // Seleccionar todos los enlaces "nav-link"
+  // Detección de página activa => cambiar color y añadir flecha "→"
+  const currentPath = window.location.pathname;  
+  // Por ejemplo "/index.html", "/rubros.html"
   const navLinks = document.querySelectorAll('.nav-link');
-  
+
   navLinks.forEach(link => {
     const linkPath = link.getAttribute('href');
-    // Si la ruta actual termina con "linkPath", marcamos como activo
     if (currentPath.endsWith(linkPath)) {
-      // Le ponemos color hover (ej. #22D3EE) de forma permanente
-      link.classList.add('text-[#22D3EE]');
+      // color cian + flecha. Ej: "Inicio →"
+      link.classList.add('text-[#22D3EE]', 'font-semibold');
+      // Añadir una flecha al final
+      link.textContent = link.textContent + ' →';
     }
   });
