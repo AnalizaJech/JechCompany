@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jech Company - Inicio</title>
+  
   <!-- Tailwind CSS CDN -->
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,38 +12,75 @@
 <body class="text-gray-800 bg-white">
 
   <!-- NAVBAR -->
-  <header class="bg-[#111827] text-white">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <!-- Logo -->
-      <a href="index.html" class="text-xl font-bold tracking-wide">
-        Jech Company
+<header class="sticky top-0 z-50 bg-gradient-to-r from-[#111827] to-[#1F2937]">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+
+    <!-- Logo + Nombre -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <!-- Ajusta el tamaño del logo a tu gusto -->
+      <img src="assets/img/logo.png" alt="Logo Jech Company" class="w-10 h-auto">
+      <span class="text-white text-lg font-semibold">Jech Company</span>
+    </a>
+    
+    <!-- Menú de escritorio (oculto en mobile) -->
+    <div class="hidden md:flex items-center space-x-6">
+      <!-- Cada enlace con clases "nav-link" para que el script resalte la página activa -->
+      <!-- Por defecto: text-white. Hover: text-[#22D3EE]. -->
+      <a href="index.html" 
+         class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+        Inicio
       </a>
-      <!-- Menú de escritorio -->
-      <div class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:text-[#22D3EE] transition-colors">Inicio</a>
-        <a href="rubros.html" class="hover:text-[#22D3EE] transition-colors">Rubros</a>
-        <a href="nosotros.html" class="hover:text-[#22D3EE] transition-colors">Nosotros</a>
-        <a href="contacto.html" class="hover:text-[#22D3EE] transition-colors">Contacto</a>
-      </div>
-      <!-- Botón Menú Móvil -->
-      <button id="menuBtn" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </nav>
-    <!-- Menú móvil (oculto por defecto) -->
-    <div id="mobileMenu" class="bg-[#111827] md:hidden hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="index.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Inicio</a>
-        <a href="rubros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Rubros</a>
-        <a href="nosotros.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Nosotros</a>
-        <a href="contacto.html" class="block px-3 py-2 text-white hover:bg-[#22D3EE] hover:text-black transition">Contacto</a>
-      </div>
+      <a href="rubros.html" 
+         class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+        Rubros
+      </a>
+      <a href="nosotros.html" 
+         class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+        Nosotros
+      </a>
+      <a href="contacto.html" 
+         class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+        Contacto
+      </a>
     </div>
-  </header>
+    
+    <!-- Botón hamburguesa (visible en mobile) -->
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Menú Móvil (slide-in from right) -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 h-screen w-64 bg-[#1F2937] transform translate-x-full 
+              transition-transform duration-300 md:hidden flex flex-col pt-20 px-6 space-y-6">
+
+    <!-- Enlaces en mobile (mismas clases para poder marcar activo) -->
+    <a href="index.html" 
+       class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+      Inicio
+    </a>
+    <a href="rubros.html" 
+       class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+      Rubros
+    </a>
+    <a href="nosotros.html" 
+       class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+      Nosotros
+    </a>
+    <a href="contacto.html" 
+       class="nav-link text-white hover:text-[#22D3EE] transition-colors">
+      Contacto
+    </a>
+  </div>
+</header>
+  
+
+  
 
   <!-- HERO SECTION -->
 <section 
@@ -332,17 +370,6 @@ style="background-image: url('assets/img/profesionales.png');"
     </div>
   </footer>
   
-  
-  
-
-  <!-- JS para menú móvil -->
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
