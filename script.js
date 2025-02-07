@@ -17,17 +17,27 @@
     mobileMenu.classList.add('translate-x-full');
   });
 
-  // Detección de página activa => cambiar color y añadir flecha "→"
-  const currentPath = window.location.pathname;  
-  // Por ejemplo "/index.html", "/rubros.html"
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (currentPath.endsWith(linkPath)) {
-      // color cian + flecha. Ej: "Inicio →"
-      link.classList.add('text-[#22D3EE]', 'font-semibold');
-      // Añadir una flecha al final
-      link.textContent = link.textContent + ' →';
-    }
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.replace(/^\/+/, ''); // Normaliza la ruta
+    console.log("🔎 Ruta actual detectada:", currentPath); 
+  
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute('href').replace(/^\/+/, ''); 
+      console.log(`🔍 Comparando: ${currentPath} con ${linkPath}`);
+  
+      if (currentPath === linkPath) { 
+        console.log(`✅ Página activa detectada: ${linkPath}`); 
+        
+        // Asegurar que Tailwind aplica el estilo dinámico correctamente
+        link.classList.add('text-cyan-400', 'font-semibold');
+  
+        // Evitar duplicar la flecha en recargas
+        if (!link.textContent.includes("→")) {
+          link.innerHTML += " →"; 
+        }
+      }
+    });
   });
+  
