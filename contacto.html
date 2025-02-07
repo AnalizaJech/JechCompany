@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-800 bg-white">
+<body class="text-gray-800 ">
 
 <!-- NAVBAR -->
 <header class="sticky top-0 z-40 bg-gradient-to-r from-[#111827] to-[#000000]">
@@ -90,63 +90,92 @@
   </nav>
 </div>
 
- <!-- FORMULARIO DE CONTACTO -->
- <main class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-bold mb-8 text-center text-[#000000]">Contáctanos</h1>
-    <form action="#" method="post" class="bg-white p-6 rounded shadow">
-      <!-- Campo Nombre -->
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
-        <input 
-          type="text" 
-          id="name" 
-          name="name" 
-          required
-          class="w-full border-2 border-gray-100 rounded px-3 py-2 
-                 focus:outline-none focus:border-[#E91E63] 
-                 focus:ring-1 focus:ring-[#E91E63]"
-        >
-      </div>
-      <!-- Campo Email -->
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-semibold mb-2">Correo Electrónico</label>
-        <input 
-          type="email" 
-          id="email" 
-          name="email" 
-          required
-          class="w-full border-2 border-gray-100 rounded px-3 py-2 
-                 focus:outline-none focus:border-[#E91E63] 
-                 focus:ring-1 focus:ring-[#E91E63]"
-        >
-      </div>
-      <!-- Campo Mensaje (Textarea) -->
-      <div class="mb-4">
-        <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
-        <textarea 
-  id="message" 
-  name="message" 
-  required
-  class="w-full border-2 border-gray-100 rounded px-3 py-2 
-         focus:outline-none focus:border-[#E91E63] 
-         focus:ring-1 focus:ring-[#E91E63]
-         resize-none h-40"
-  placeholder="Escribe tu mensaje..."
-></textarea>
+<!-- SECCIÓN DE CONTACTO CON FONDO CORRECTO -->
+<section class="w-full bg-gradient-to-b from-[#111827] to-[#1E293B] text-white py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+  <div class="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- COLUMNA IZQUIERDA: Información de Contacto -->
+    <div class="text-left">
+      <h2 class="text-4xl font-bold text-[#22D3EE] mb-4">¿Hablemos?</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        ¿Tienes un proyecto en mente o necesitas más información sobre nuestros servicios? 
+        ¡Estamos aquí para ayudarte a llevar tus ideas al siguiente nivel!
+      </p>
 
+      <div class="space-y-4">
+        <div class="flex items-center space-x-3">
+          <img src="assets/svg/telefono.svg" class="w-6 h-6 text-[#22D3EE]" alt="Teléfono">
+          <p class="text-gray-300">
+            <span class="font-semibold">Tel:</span> 
+            <a href="tel:+51921737608" class="text-[#22D3EE] hover:underline">+51 921 737 608</a>
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <img src="assets/svg/correo.svg" class="w-6 h-6 text-[#22D3EE]" alt="Correo">
+          <p class="text-gray-300">
+            <span class="font-semibold">Email:</span> 
+            <a href="mailto:info@jechcompany.com" class="text-[#22D3EE] hover:underline">
+              info@jechcompany.com
+            </a>
+          </p>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <img src="assets/svg/ubicacion.svg" class="w-6 h-6 text-[#22D3EE]" alt="Ubicación">
+          <p class="text-gray-300">
+            <span class="font-semibold">Ubicación:</span> Lima, PE, Perú
+          </p>
+        </div>
       </div>
-      <!-- Botón Enviar -->
-      <button 
-        type="submit"
-        class="bg-[#E91E63] hover:bg-pink-700 text-white font-bold py-2 px-6 rounded transition-colors"
-      >
-        Enviar
-      </button>
-    </form>
-  </main>
+    </div>
+
+    <!-- COLUMNA DERECHA: FORMULARIO -->
+    <div class="bg-[#1E293B] p-8 rounded-lg shadow-lg border border-[#22D3EE]">
+      <h3 class="text-3xl font-semibold text-[#22D3EE] mb-6 text-center">Envíanos un mensaje</h3>
+      <form action="#" method="post">
+        <!-- Campo Nombre -->
+        <div class="mb-4">
+          <label for="name" class="block text-gray-300 font-semibold mb-2">Nombre</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full border border-gray-500 bg-[#2D3748] text-white rounded px-3 py-2 
+                        focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE]">
+        </div>
+
+        <!-- Campo Email -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-300 font-semibold mb-2">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full border border-gray-500 bg-[#2D3748] text-white rounded px-3 py-2 
+                        focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE]">
+        </div>
+
+        <!-- Campo Mensaje -->
+        <div class="mb-4">
+          <label for="message" class="block text-gray-300 font-semibold mb-2">Mensaje</label>
+          <textarea id="message" name="message" required
+                    class="w-full border border-gray-500 bg-[#2D3748] text-white rounded px-3 py-2 h-36 
+                           focus:outline-none focus:border-[#22D3EE] focus:ring-1 
+                           focus:ring-[#22D3EE] resize-none"></textarea>
+        </div>
+
+        <!-- Botón Enviar -->
+        <button type="submit"
+                class="w-full bg-[#22D3EE] hover:bg-[#0ea5e9] text-white font-bold py-3 rounded-lg 
+                       transition-colors duration-300 shadow-lg hover:shadow-[#22D3EE]/50">
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
 
   <!-- FOOTER -->
-<footer class="bg-[#111827] text-white pt-10 pb-6 mt-8">
+<footer class="bg-[#111827] text-white pt-10 pb-6 ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   
       <!-- GRID principal: 3 columnas en desktop, 1 en móvil -->
