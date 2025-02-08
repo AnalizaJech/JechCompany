@@ -95,189 +95,154 @@
 
   
 
-  <!-- HERO SECTION -->
+<!-- HERO SECTION -->
 <section 
 class="relative flex items-center justify-center text-center h-[100vh] bg-cover bg-center bg-no-repeat" 
 style="background-image: url('assets/img/profesionales.png');"
 >
-<!-- Overlay oscuro -->
-<div class="absolute inset-0 bg-[#000000]/60"></div>
-
+<!-- Overlay con sombreado más claro -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#000000]/40 to-[#000000]/60"></div>
 <!-- Contenido hero -->
 <div class="relative z-10 px-6 text-white max-w-2xl">
-  <h1 class="text-4xl sm:text-6xl font-bold mb-4">
+  <h1 class="text-5xl sm:text-7xl font-bold mb-4 text-[#E91E63] drop-shadow-lg">
     Bienvenidos a Jech Company
   </h1>
-  <p class="text-lg sm:text-xl mb-6">
-    Innovamos en todo, excepto en minería. Descubre cómo transformamos ideas en
-    proyectos sorprendentes: marketing, diseño, programación, música, producción
-    audiovisual, liderazgo y más.
+  <p class="text-lg sm:text-xl mb-6 drop-shadow-md">
+    Descubre cómo transformamos ideas en proyectos sorprendentes: marketing, diseño, programación, música, producción audiovisual, liderazgo y más.
   </p>
   <a 
     href="rubros.html"
-    class="bg-[#E91E63] hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+    class="inline-block bg-[#E91E63] hover:bg-[#D81B60] text-white font-semibold px-8 py-4 rounded-full transition-all duration-500 shadow-md hover:shadow-lg"
   >
     Conoce Nuestros Rubros
   </a>
 </div>
 </section>
 
-
-  <!-- SECCIÓN DESTACADOS (Gradiente oscuro) -->
+<!-- SECCIÓN DESTACADOS (Gradiente oscuro) -->
 <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#111827] to-[#1F2937]">
-  <h2 class="text-3xl font-bold text-center mb-8 text-white">Productos Destacados</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <!-- Card Producto 1 -->
-    <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-      <img src="assets/img/producto1.png" alt="Marketing" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2 text-[#111827]">Campaña de Marketing Viral</h3>
-        <p class="text-gray-600 mb-4">
-          Creamos estrategias publicitarias con impacto mundial para marcas emergentes y experimentadas.
-        </p>
-        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
-      </div>
+<h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-purple-500">Productos Destacados</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- Card Producto 1 -->
+  <div class="bg-gray-800 text-white rounded-2xl overflow-hidden shadow-md hover:shadow-purple-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <img src="assets/img/producto1.png" alt="Marketing" class="w-full h-64 object-cover">
+    <div class="p-8">
+      <h3 class="text-2xl font-bold mb-4 text-purple-500">Campaña de Marketing Viral</h3>
+      <p class="text-gray-300 mb-6">
+        Creamos estrategias publicitarias con impacto mundial para marcas emergentes y experimentadas.
+      </p>
+      <a href="producto.html" class="text-[#22D3EE] hover:text-sky-500 transition-colors duration-500 font-semibold">Más detalles &rarr;</a>
     </div>
-
-    <!-- Card Producto 2 -->
-    <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-      <img 
-        src="assets/img/producto2.png" 
-        alt="e-Learning Empresarial" 
-        class="w-full h-48 object-cover"
-      >
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2 text-[#111827]">Plataforma e-Learning Empresarial</h3>
-        <p class="text-gray-600 mb-4">
-          Diseñamos sistemas de capacitación interna, optimizando la formación y el desarrollo de equipos.
-        </p>
-        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card Producto 3 -->
-    <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-      <img 
-        src="assets/img/producto3.png" 
-        alt="Video Corporativo" 
-        class="w-full h-48 object-cover"
-      >
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2 text-[#111827]">Video Corporativo Emocional</h3>
-        <p class="text-gray-600 mb-4">
-          Creamos historias inspiradoras que humanizan tu marca, fortaleciendo el vínculo con clientes e inversores.
-        </p>
-        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card Producto 4 -->
-    <div class="bg-white border rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-      <img 
-        src="assets/img/producto4.png" 
-        alt="Transformación Digital" 
-        class="w-full h-48 object-cover"
-      >
-      <div class="p-4">
-        <h3 class="text-xl font-semibold mb-2 text-[#111827]">Transformación Digital Integral</h3>
-        <p class="text-gray-600 mb-4">
-          Moderniza y optimiza tu negocio integrando tecnologías y procesos digitales en cada área.
-        </p>
-        <a href="producto.html" class="text-[#E91E63] hover:underline">Ver detalle &rarr;</a>
-      </div>
-    </div>
-
   </div>
+  <!-- Card Producto 2 -->
+  <div class="bg-gray-800 text-white rounded-2xl overflow-hidden shadow-md hover:shadow-purple-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <img src="assets/img/producto2.png" alt="e-Learning Empresarial" class="w-full h-64 object-cover">
+    <div class="p-8">
+      <h3 class="text-2xl font-bold mb-4 text-purple-500">Plataforma e-Learning Empresarial</h3>
+      <p class="text-gray-300 mb-6">
+        Diseñamos sistemas de capacitación interna, optimizando la formación y el desarrollo de equipos.
+      </p>
+      <a href="producto.html" class="text-[#22D3EE] hover:text-sky-500 transition-colors duration-500 font-semibold">Más detalles &rarr;</a>
+    </div>
+  </div>
+  <!-- Card Producto 3 -->
+  <div class="bg-gray-800 text-white rounded-2xl overflow-hidden shadow-md hover:shadow-purple-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <img src="assets/img/producto3.png" alt="Video Corporativo" class="w-full h-64 object-cover">
+    <div class="p-8">
+      <h3 class="text-2xl font-bold mb-4 text-purple-500">Video Corporativo Emocional</h3>
+      <p class="text-gray-300 mb-6">
+        Creamos historias inspiradoras que humanizan tu marca, fortaleciendo el vínculo con clientes e inversores.
+      </p>
+      <a href="producto.html" class="text-[#22D3EE] hover:text-sky-500 transition-colors duration-500 font-semibold">Más detalles &rarr;</a>
+    </div>
+  </div>
+  <!-- Card Producto 4 -->
+  <div class="bg-gray-800 text-white rounded-2xl overflow-hidden shadow-md hover:shadow-purple-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <img src="assets/img/producto4.png" alt="Transformación Digital" class="w-full h-64 object-cover">
+    <div class="p-8">
+      <h3 class="text-2xl font-bold mb-4 text-purple-500">Transformación Digital Integral</h3>
+      <p class="text-gray-300 mb-6">
+        Moderniza y optimiza tu negocio integrando tecnologías y procesos digitales en cada área.
+      </p>
+      <a href="producto.html" class="text-[#22D3EE] hover:text-sky-500 transition-colors duration-500 font-semibold">Más detalles &rarr;</a>
+    </div>
+  </div>
+</div>
 </section>
 
-
-
-
- <!-- SECCIÓN TESTIMONIOS (Gradiente de #1F2937 a #000000) -->
+<!-- SECCIÓN TESTIMONIOS (Gradiente de #1F2937 a #000000) -->
 <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1F2937] to-[#000000]">
-  <h2 class="text-3xl font-bold text-center mb-8 text-white">Testimonios</h2>
-  
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    
-    <!-- Testimonio 1 -->
-    <div class="bg-white p-6 rounded shadow-xl hover:shadow-2xl transition-shadow">
-      <div class="flex items-center mb-4">
-        <img 
-          src="assets/img/persona1.png" 
-          alt="Foto Testimonio" 
-          class="w-12 h-12 object-cover rounded-full mr-4"
-        >
-        <div>
-          <p class="text-[#111827] font-semibold">Carlos Mendoza</p>
-          <p class="text-sm text-gray-500">CEO de StartUp X</p>
-        </div>
+<h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-amber-400">Testimonios</h2>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- Testimonio 1 -->
+  <div class="bg-gray-800 text-white p-8 rounded-2xl shadow-md hover:shadow-amber-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <div class="flex items-center mb-6">
+      <img 
+        src="assets/img/persona1.png" 
+        alt="Foto Testimonio" 
+        class="w-16 h-16 object-cover rounded-full mr-6 border-4 border-amber-400"
+      >
+      <div>
+        <p class="text-gray-200 font-bold text-xl">Carlos Mendoza</p>
+        <p class="text-sm text-gray-400">CEO de StartUp X</p>
       </div>
-      <p class="text-gray-700 italic mb-4">
-        "Trabajar con Jech Company fue un antes y un después para nuestra marca. 
-        Alcanzamos niveles de visibilidad en redes que jamás imaginamos. ¡100% recomendados!"
-      </p>
     </div>
-    
-    <!-- Testimonio 2 -->
-    <div class="bg-white p-6 rounded shadow-xl hover:shadow-2xl transition-shadow">
-      <div class="flex items-center mb-4">
-        <img 
-          src="assets/img/persona2.png" 
-          alt="Foto Testimonio" 
-          class="w-12 h-12 object-cover rounded-full mr-4"
-        >
-        <div>
-          <p class="text-[#111827] font-semibold">Jorge Valdez</p>
-          <p class="text-sm text-gray-500">Director, Innovatech</p>
-        </div>
-      </div>
-      <p class="text-gray-700 italic mb-4">
-        "El video corporativo que nos creó Jech Company fue increíble. 
-        Lograron transmitir nuestra esencia de manera auténtica y conectar con nuestros clientes e inversores. 
-        ¡Superaron todas nuestras expectativas!"
-      </p>
-    </div>
-    
-    <!-- Testimonio 3 -->
-    <div class="bg-white p-6 rounded shadow-xl hover:shadow-2xl transition-shadow">
-      <div class="flex items-center mb-4">
-        <img 
-          src="assets/img/persona3.png" 
-          alt="Foto Testimonio" 
-          class="w-12 h-12 object-cover rounded-full mr-4"
-        >
-        <div>
-          <p class="text-[#111827] font-semibold">Luis Fernández</p>
-          <p class="text-sm text-gray-500">Gerente de Marketing, GlobalCorp</p>
-        </div>
-      </div>
-      <p class="text-gray-700 italic mb-4">
-        "Su solución e-Learning revolucionó la forma en que capacitamos a nuestro equipo. 
-        Conseguimos mayor eficacia, reducción de costos y un aprendizaje más dinámico. ¡Totalmente transformador!"
-      </p>
-    </div>
-    
-    <!-- Testimonio 4 -->
-    <div class="bg-white p-6 rounded shadow-xl hover:shadow-2xl transition-shadow">
-      <div class="flex items-center mb-4">
-        <img 
-          src="assets/img/persona4.png" 
-          alt="Foto Testimonio" 
-          class="w-12 h-12 object-cover rounded-full mr-4"
-        >
-        <div>
-          <p class="text-[#111827] font-semibold">María López</p>
-          <p class="text-sm text-gray-500">CFO, FinTech Solutions</p>
-        </div>
-      </div>
-      <p class="text-gray-700 italic mb-4">
-        "La asesoría en transformación digital que recibimos fue clave para nuestro crecimiento. 
-        Avanzamos mucho más rápido de lo esperado gracias a su equipo de expertos. ¡Excelentes profesionales!"
-      </p>
-    </div>
-
+    <p class="text-gray-300 italic">
+      "Trabajar con Jech Company fue un antes y un después para nuestra marca. Alcanzamos niveles de visibilidad en redes que jamás imaginamos. ¡100% recomendados!"
+    </p>
   </div>
+  <!-- Testimonio 2 -->
+  <div class="bg-gray-800 text-white p-8 rounded-2xl shadow-md hover:shadow-amber-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <div class="flex items-center mb-6">
+      <img 
+        src="assets/img/persona2.png" 
+        alt="Foto Testimonio" 
+        class="w-16 h-16 object-cover rounded-full mr-6 border-4 border-amber-400"
+      >
+      <div>
+        <p class="text-gray-200 font-bold text-xl">Jorge Valdez</p>
+        <p class="text-sm text-gray-400">Director, Innovatech</p>
+      </div>
+    </div>
+    <p class="text-gray-300 italic">
+      "El video corporativo que nos creó Jech Company fue increíble. Lograron transmitir nuestra esencia de manera auténtica y conectar con nuestros clientes e inversores. ¡Superaron todas nuestras expectativas!"
+    </p>
+  </div>
+  <!-- Testimonio 3 -->
+  <div class="bg-gray-800 text-white p-8 rounded-2xl shadow-md hover:shadow-amber-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <div class="flex items-center mb-6">
+      <img 
+        src="assets/img/persona3.png" 
+        alt="Foto Testimonio" 
+        class="w-16 h-16 object-cover rounded-full mr-6 border-4 border-amber-400"
+      >
+      <div>
+        <p class="text-gray-200 font-bold text-xl">Luis Fernández</p>
+        <p class="text-sm text-gray-400">Gerente de Marketing, GlobalCorp</p>
+      </div>
+    </div>
+    <p class="text-gray-300 italic">
+      "Su solución e-Learning revolucionó la forma en que capacitamos a nuestro equipo. Conseguimos mayor eficacia, reducción de costos y un aprendizaje más dinámico. ¡Totalmente transformador!"
+    </p>
+  </div>
+  <!-- Testimonio 4 -->
+  <div class="bg-gray-800 text-white p-8 rounded-2xl shadow-md hover:shadow-amber-400/50 transition-shadow duration-500 transform hover:-translate-y-3">
+    <div class="flex items-center mb-6">
+      <img 
+        src="assets/img/persona4.png" 
+        alt="Foto Testimonio" 
+        class="w-16 h-16 object-cover rounded-full mr-6 border-4 border-amber-400"
+      >
+      <div>
+        <p class="text-gray-200 font-bold text-xl">María López</p>
+        <p class="text-sm text-gray-400">CFO, FinTech Solutions</p>
+      </div>
+    </div>
+    <p class="text-gray-300 italic">
+      "La asesoría en transformación digital que recibimos fue clave para nuestro crecimiento. Avanzamos mucho más rápido de lo esperado gracias a su equipo de expertos. ¡Excelentes profesionales!"
+    </p>
+  </div>
+</div>
 </section>
 
 
