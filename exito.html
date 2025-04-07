@@ -1,21 +1,52 @@
-<!-- exito.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mensaje enviado</title>
-  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
-  <div class="text-center p-8 bg-gray-800 rounded-lg shadow-lg">
-    <svg class="w-16 h-16 text-green-400 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="2"
-         viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12l2 2l4 -4m5 2a9 9 0 11-18 0a9 9 0 0118 0z"/>
-    </svg>
-    <h1 class="text-2xl font-bold mb-2">¡Mensaje enviado correctamente!</h1>
-    <p class="text-gray-300 mb-4">Gracias por contactarte con Jech Company. Te responderemos pronto.</p>
-    <a href="index.html" class="text-cyan-400 hover:underline">← Volver al inicio</a>
-  </div>
+<body class="min-h-screen bg-gradient-to-b from-[#111827] to-[#1E293B] flex items-center justify-center px-4 text-white">
+
+    <div class="backdrop-blur-md bg-[#1e293b]/70 border border-cyan-400 shadow-xl rounded-2xl p-8 w-full max-w-md text-center space-y-4">
+      
+      <!-- Ícono SVG personalizado -->
+      <div class="flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="text-green-400">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+          <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+          <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+          <path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+          <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+          <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+          <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+          <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+          <path d="M9 12l2 2l4 -4" />
+        </svg>
+      </div>
+
+      <!-- Título -->
+      <h1 class="text-2xl font-bold">¡Mensaje enviado correctamente!</h1>
+
+      <!-- Texto -->
+      <p class="text-gray-300">
+        Gracias por contactarte con <span class="text-cyan-400 font-semibold">Jech Company</span>. <br />
+        Te responderemos lo antes posible.
+      </p>
+
+      <!-- Botón mejorado -->
+      <a href="index.html"
+         class="inline-block bg-cyan-400 hover:bg-cyan-500 text-white font-bold py-3 px-6 rounded-lg 
+                transition duration-300 shadow-md hover:shadow-cyan-400/50">
+        ← Volver al inicio
+      </a>
+
+    </div>
 </body>
 </html>
